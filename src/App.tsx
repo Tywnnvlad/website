@@ -10,15 +10,15 @@ function App() {
 			<div className='container'>
 				<Mysection
 					image={'src/assets/bg1.jpg'}
-					headline={'Lorem, ipsum dolor.'}
+					text={'Lorem, ipsum dolor.'}
 				/>
 				<Mysection
 					image={'src/assets/bg2.jpg'}
-					headline={'Lorem, ipsum dolor.'}
+					text={'Lorem, ipsum dolor.'}
 				/>
 				<Mysection
 					image={'src/assets/bg3.jpg'}
-					headline={'Lorem, ipsum dolor.'}
+					text={'Lorem, ipsum dolor.'}
 				/>
 			</div>
 		</>
