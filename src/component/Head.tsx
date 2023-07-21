@@ -14,7 +14,7 @@ import {
 import giantslogo from "../assets/giantslogo.png";
 import giantstitle from "../assets/giantstitle.png";
 
-export default function AppShellDemo() {
+export default function Head() {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
   return (
@@ -66,8 +66,9 @@ export default function AppShellDemo() {
           height={{ base: 50, md: 60 }}
           p="md"
           style={{
-            background: theme.colors.blue[5],
+            background: "#42382C",
             border: "0px",
+            opacity: "0.8",
           }}
         >
           <div
@@ -111,9 +112,11 @@ export default function AppShellDemo() {
                 fit="scale-down"
               />
             </SimpleGrid>
-
             {/* <Text>Application header</Text> */}
-            <SimpleGrid cols={5}>
+            <SimpleGrid
+              className="headerButton"
+              cols={5}
+            >
               <Button>About Us</Button>
               <Button>Schedule</Button>
               <Button>Location</Button>
