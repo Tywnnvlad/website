@@ -101,28 +101,38 @@ export default function Head() {
                 justifyItems: "center",
               }}
             >
-              <Image
-                src={giantslogo}
-                width="3.5rem"
-                fit="scale-down"
-              />
+              <MediaQuery
+                smallerThan="sm"
+                styles={{ display: "none" }}
+              >
+                <Image
+                  src={giantslogo}
+                  width="3rem"
+                  fit="scale-down"
+                />
+              </MediaQuery>
               <Image
                 src={giantstitle}
                 width="7rem"
                 fit="scale-down"
               />
             </SimpleGrid>
-            {/* <Text>Application header</Text> */}
-            <SimpleGrid
-              className="headerButton"
-              cols={5}
+            <MediaQuery
+              smallerThan="sm"
+              styles={{ display: "none" }}
             >
-              <Button>About Us</Button>
-              <Button>Schedule</Button>
-              <Button>Location</Button>
-              <Button>Image</Button>
-              <Button>Contact Us</Button>
-            </SimpleGrid>
+              <SimpleGrid
+                className="headerButton"
+                cols={5}
+              >
+                <Button>About Us</Button>
+                <Button>Schedule</Button>
+                <Button>Location</Button>
+                <Button>Image</Button>
+                <Button>Contact Us</Button>
+              </SimpleGrid>
+            </MediaQuery>
+            {/* <Text>Application header</Text> */}
           </div>
         </Header>
       }
