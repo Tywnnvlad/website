@@ -2,7 +2,14 @@ import { ClassNames, Image, Button, Text } from "@mantine/core";
 // import './Mysection.css';
 import { useEffect, useRef } from "react";
 
-const Mysection = ({ image, text }) => {
+//Proper way of passing and declaring props!
+type sectionProp = {
+  image: string;
+  text: string;
+};
+
+const Mysection = (props: sectionProp) => {
+  const { image, text } = props;
   return (
     // <div className='section'>
     // 	<div className='copy'>

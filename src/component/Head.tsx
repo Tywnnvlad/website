@@ -1,15 +1,18 @@
 import { useState } from "react";
 import {
   AppShell,
-  Navbar,
   Header,
-  Footer,
-  Aside,
   Text,
   MediaQuery,
   Burger,
   useMantineTheme,
+  SimpleGrid,
+  Button,
+  Image,
 } from "@mantine/core";
+
+import giantslogo from "../assets/giantslogo.png";
+import giantstitle from "../assets/giantstitle.png";
 
 export default function AppShellDemo() {
   const theme = useMantineTheme();
@@ -24,8 +27,8 @@ export default function AppShellDemo() {
               : theme.colors.gray[0],
         },
       }}
-      navbarOffsetBreakpoint="sm"
-      asideOffsetBreakpoint="sm"
+      //   navbarOffsetBreakpoint="sm"
+      //   asideOffsetBreakpoint="sm"
       //   navbar={
       //     <Navbar
       //       p="md"
@@ -60,11 +63,22 @@ export default function AppShellDemo() {
       //   }
       header={
         <Header
-          height={{ base: 50, md: 70 }}
+          height={{ base: 50, md: 60 }}
           p="md"
+          style={{
+            background: theme.colors.blue[5],
+            border: "0px",
+          }}
         >
           <div
-            style={{ display: "flex", alignItems: "center", height: "100%" }}
+            style={{
+              margin: 0,
+              padding: 0,
+              display: "flex",
+              alignItems: "center",
+              height: "100%",
+              justifyContent: "space-between",
+            }}
           >
             <MediaQuery
               largerThan="sm"
@@ -78,13 +92,39 @@ export default function AppShellDemo() {
                 mr="xl"
               />
             </MediaQuery>
+            <SimpleGrid
+              cols={2}
+              spacing={0}
+              style={{
+                alignItems: "center",
+                justifyItems: "center",
+              }}
+            >
+              <Image
+                src={giantslogo}
+                width="3.5rem"
+                fit="scale-down"
+              />
+              <Image
+                src={giantstitle}
+                width="7rem"
+                fit="scale-down"
+              />
+            </SimpleGrid>
 
-            <Text>Application header</Text>
+            {/* <Text>Application header</Text> */}
+            <SimpleGrid cols={5}>
+              <Button>About Us</Button>
+              <Button>Schedule</Button>
+              <Button>Location</Button>
+              <Button>Image</Button>
+              <Button>Contact Us</Button>
+            </SimpleGrid>
           </div>
         </Header>
       }
     >
-      <Text>Resize app to see responsive navbar in action</Text>
+      {/* <Text>Resize app to see responsive navbar in action</Text> */}
     </AppShell>
   );
 }
