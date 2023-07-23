@@ -18,16 +18,14 @@
 }
 
 .img{
+  aspect-ratio: auto;
   position: absolute;
-  object-fit: fill;
+  object-fit: cover;
   object-position: center;
-  width: 100%;
+  max-width: 100%;
+  /* min-width: 500px; */
   height: 100vh;
   z-index: 1;
-  /* @media (min-width 786px) {
-    height: 100%;
-    width: auto;
-  } */
 
 }
 .copy{
@@ -49,6 +47,7 @@
     
   } */
 }
+
 
 .container{
   position: relative;
