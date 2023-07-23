@@ -24,22 +24,21 @@ function App() {
 					refToImagePage={imagePage}
 					refToContactUsPage={contactUsPage}
 				/>
-				<div className='welcomePage'>
-					<Mysection
-						image={'src/assets/bg1Mobile.jpg'}
-						text={'Welcome page'}
-						ref={welcomePage}
-					/>
-				</div>
-				<div className='aboutUsPage'>
-					<Mysection
-						image={'src/assets/bg2.jpg'}
-						text={'About Us'}
-						ref={aboutUsPage}
-					/>
-				</div>
+
 				<Mysection
-					image={'src/assets/bg3.jpg'}
+					image={'src/assets/bg1Mobile.jpg'}
+					text={'Welcome page'}
+					ref={welcomePage}
+				/>
+
+				<Mysection
+					image={'src/assets/videoBG.webm'}
+					text={'About Us'}
+					ref={aboutUsPage}
+				/>
+
+				<Mysection
+					image={'src/assets/bg2.jpg'}
 					text={'Schedule'}
 					ref={schedulePage}
 				/>
@@ -49,12 +48,12 @@ function App() {
 					ref={locationPage}
 				/>
 				<Mysection
-					image={'src/assets/bg3.jpg'}
+					image={'src/assets/bg4.jpg'}
 					text={'Image'}
 					ref={imagePage}
 				/>
 				<Mysection
-					image={'src/assets/bg3.jpg'}
+					image={'src/assets/bg1.jpg'}
 					text={'Contact Us'}
 					ref={contactUsPage}
 				/>
