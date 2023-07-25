@@ -27,34 +27,34 @@ function App() {
 
 				<Mysection
 					image={'src/assets/newbg2.jpg'}
-					text={'Welcome page'}
+					title={'Welcome page'}
 					ref={welcomePage}
 				/>
 
 				<Mysection
 					image={'src/assets/newbg1.jpg'}
-					text={'About Us'}
+					title={'About Us'}
 					ref={aboutUsPage}
 				/>
 
 				<Mysection
 					image={'src/assets/bg1.jpg'}
-					text={'Schedule'}
+					title={'Schedule'}
 					ref={schedulePage}
 				/>
 				<Mysection
 					image={'src/assets/bg2.jpg'}
-					text={'Location'}
+					title={'Location'}
 					ref={locationPage}
 				/>
 				<Mysection
 					image={'src/assets/bg3.jpg'}
-					text={'Image'}
+					title={'Image'}
 					ref={imagePage}
 				/>
 				<Mysection
 					image={'src/assets/bg4.jpg'}
-					text={'Contact Us'}
+					title={'Contact Us'}
 					ref={contactUsPage}
 				/>
 			</div>
