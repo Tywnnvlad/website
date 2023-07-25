@@ -1,4 +1,10 @@
-import { ClassNames, Image, Button, Text } from '@mantine/core';
+import {
+	ClassNames,
+	Image,
+	Button,
+	Text,
+	BackgroundImage,
+} from '@mantine/core';
 // import './Mysection.css';
 import { useImperativeHandle, forwardRef, useRef } from 'react';
 
@@ -27,11 +33,15 @@ const Mysection = forwardRef((props: sectionProp, ref) => {
 					{text}
 				</Text>
 			</div>
-			<Image
+			<BackgroundImage
+				className='img'
+				src={image}>
+				{/* <Image
 				className='img'
 				src={image}
 				// fit='fill'
-			/>
+			/> */}
+			</BackgroundImage>
 			<div className='overlay'></div>
 		</div>
 	);

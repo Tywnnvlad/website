@@ -26,34 +26,34 @@ function App() {
 				/>
 
 				<Mysection
-					image={'src/assets/bg1Mobile.jpg'}
+					image={'src/assets/newbg2.jpg'}
 					text={'Welcome page'}
 					ref={welcomePage}
 				/>
 
 				<Mysection
-					image={'src/assets/videoBG.webm'}
+					image={'src/assets/newbg1.jpg'}
 					text={'About Us'}
 					ref={aboutUsPage}
 				/>
 
 				<Mysection
-					image={'src/assets/bg2.jpg'}
+					image={'src/assets/bg1.jpg'}
 					text={'Schedule'}
 					ref={schedulePage}
 				/>
 				<Mysection
-					image={'src/assets/bg3.jpg'}
+					image={'src/assets/bg2.jpg'}
 					text={'Location'}
 					ref={locationPage}
 				/>
 				<Mysection
-					image={'src/assets/bg4.jpg'}
+					image={'src/assets/bg3.jpg'}
 					text={'Image'}
 					ref={imagePage}
 				/>
 				<Mysection
-					image={'src/assets/bg1.jpg'}
+					image={'src/assets/bg4.jpg'}
 					text={'Contact Us'}
 					ref={contactUsPage}
 				/>
