@@ -33,7 +33,7 @@ const Welcome = forwardRef((props: sectionProp, ref) => {
             <Grid.Col sm={12}>
               <Text
                 size="2rem"
-                color="white"
+                color="giantsjj.1"
               >
                 {title}
               </Text>
