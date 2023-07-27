@@ -1,10 +1,9 @@
 import { useRef, useState } from "react";
-import { MantineProvider } from "@mantine/core";
 import Mysection from "./component/Mysection";
 import Head from "./component/Head";
 import Welcome from "./component/Welcome";
 import Location from "./component/Location";
-
+import Images from "./component/Images";
 import "./App.css";
 
 function App() {
@@ -26,12 +25,6 @@ function App() {
           refToImagePage={imagePage}
           refToContactUsPage={contactUsPage}
         />
-        {/* 
-        <Mysection
-          image={"src/assets/newbg2.jpg"}
-          title={"Welcome page"}
-          ref={welcomePage}
-        /> */}
         <Welcome
           backgroundImage={"src/assets/newbg2.jpg"}
           title={"Welcome GIANT"}
@@ -51,21 +44,18 @@ function App() {
           title={"Schedule"}
           ref={schedulePage}
         />
-        {/* <Mysection
-          image={"src/assets/bg2.jpg"}
-          title={"Location"}
-          ref={locationPage}
-        /> */}
         <Location
           backgroundImage={"src/assets/bg2.jpg"}
-          map={""}
+          map={"test"}
           title={"Location"}
-          ref={locationPage}
           message={"Our humble mojo dojo casa house"}
+          ref={locationPage}
         />
-        <Mysection
-          image={"src/assets/bg3.jpg"}
-          title={"Image"}
+        <Images
+          backgroundImage={"src/assets/bg3.jpg"}
+          img={"Test"}
+          title={"Images"}
+          message={"Snippets of our dojo"}
           ref={imagePage}
         />
         <Mysection

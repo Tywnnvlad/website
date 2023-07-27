@@ -1,15 +1,16 @@
 import { BackgroundImage, Grid, Container, Text, Image } from "@mantine/core";
 import { useImperativeHandle, forwardRef, useRef } from "react";
+import { Carousel } from "@mantine/carousel";
 
 type sectionProp = {
   backgroundImage: string;
-  image: string;
+  img: string;
   title: string;
   message: string;
 };
 
-const Welcome = forwardRef((props: sectionProp, ref) => {
-  const { backgroundImage, image, title, message } = props;
+const Images = forwardRef((props: sectionProp, ref) => {
+  const { backgroundImage, img, title, message } = props;
   const compRef = useRef();
   useImperativeHandle(ref, () => ({
     scrollIntoView: () => {
@@ -26,38 +27,32 @@ const Welcome = forwardRef((props: sectionProp, ref) => {
           <Grid
             grow
             style={{
-              color: "white",
-              fontSize: "1rem",
+              color: "giantsjj.1",
             }}
           >
             <Grid.Col sm={12}>
-              <Text
-                size="2rem"
-                color="giantsjj.1"
-              >
-                {title}
-              </Text>
+              <Text size="2rem">{title}</Text>
             </Grid.Col>
             <Grid.Col sm={12}>
-              <Text
-                size="2rem"
-                color="white"
-              >
-                {message}
-              </Text>
-            </Grid.Col>
-            <Grid.Col sm={12}>
-              <center>
-                <Image
-                  src={image}
-                  height={"300px"}
-                  width={"auto"}
-                />
-              </center>
+              <Text size="2rem">{message}</Text>
             </Grid.Col>
           </Grid>
         </Container>
       </div>
+
+      {/* break */}
+      <Carousel
+        slideSize="70%"
+        height={200}
+        slideGap="xs"
+        controlsOffset="lg"
+        loop
+        withIndicators
+      >
+        <Carousel.Slide>{img}</Carousel.Slide>
+        <Carousel.Slide>2</Carousel.Slide>
+        <Carousel.Slide>3</Carousel.Slide>
+      </Carousel>
       <BackgroundImage
         className="img"
         src={backgroundImage}
@@ -67,4 +62,4 @@ const Welcome = forwardRef((props: sectionProp, ref) => {
   );
 });
 
-export default Welcome;
+export default Images;

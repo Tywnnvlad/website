@@ -13,7 +13,7 @@ const Location = forwardRef((props: sectionProp, ref) => {
   const compRef = useRef();
   useImperativeHandle(ref, () => ({
     scrollIntoView: () => {
-      compRef.current.scrollIntoview({ behavior: "smooth," });
+      compRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     },
   }));
   return (
@@ -26,7 +26,7 @@ const Location = forwardRef((props: sectionProp, ref) => {
           <Grid
             grow
             style={{
-              color: "white",
+              color: "giantsjj.1",
               fontSize: "1rem",
             }}
           >
