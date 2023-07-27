@@ -3,6 +3,7 @@ import { MantineProvider } from "@mantine/core";
 import Mysection from "./component/Mysection";
 import Head from "./component/Head";
 import Welcome from "./component/Welcome";
+import Location from "./component/Location";
 
 import "./App.css";
 
@@ -50,10 +51,17 @@ function App() {
           title={"Schedule"}
           ref={schedulePage}
         />
-        <Mysection
+        {/* <Mysection
           image={"src/assets/bg2.jpg"}
           title={"Location"}
           ref={locationPage}
+        /> */}
+        <Location
+          backgroundImage={"src/assets/bg2.jpg"}
+          map={""}
+          title={"Location"}
+          ref={locationPage}
+          message={"Our humble mojo dojo casa house"}
         />
         <Mysection
           image={"src/assets/bg3.jpg"}
