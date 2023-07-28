@@ -28,8 +28,8 @@ function App() {
         />
         <Welcome
           backgroundImage={"src/assets/newbg2.jpg"}
-          title={"Welcome GIANT"}
-          message={""}
+          title={"BE DANGEROUS"}
+          message={"src/assets/giantstitle.png"}
           image={"src/assets/rotatinggiant.gif"}
           ref={welcomePage}
         />

@@ -23,13 +23,7 @@ const Welcome = forwardRef((props: sectionProp, ref) => {
     >
       <div className="copy">
         <Container size="lg">
-          <Grid
-            grow
-            style={{
-              color: "white",
-              fontSize: "1rem",
-            }}
-          >
+          <Grid grow>
             <Grid.Col sm={12}>
               <Text
                 size="2rem"
@@ -39,12 +33,19 @@ const Welcome = forwardRef((props: sectionProp, ref) => {
               </Text>
             </Grid.Col>
             <Grid.Col sm={12}>
-              <Text
+              <center>
+                <Image
+                  src={message}
+                  height={"150px"}
+                  width={"auto"}
+                />
+              </center>
+              {/* <Text
                 size="2rem"
                 color="white"
               >
                 {message}
-              </Text>
+              </Text> */}
             </Grid.Col>
             <Grid.Col sm={12}>
               <center>
