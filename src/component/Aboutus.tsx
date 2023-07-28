@@ -72,10 +72,12 @@ const Aboutus = forwardRef((props: sectionProp, ref) => {
               span="content"
               //   sm={6}
             >
-              <Image
-                src={pic1}
-                width={"12rem"}
-              />
+              <center>
+                <Image
+                  src={pic1}
+                  width={"12rem"}
+                />
+              </center>
             </Grid.Col>
             <Grid.Col sm={6}>
               <Text
