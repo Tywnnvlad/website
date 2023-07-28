@@ -4,6 +4,7 @@ import Head from "./component/Head";
 import Welcome from "./component/Welcome";
 import Location from "./component/Location";
 import Images from "./component/Images";
+import Aboutus from "./component/Aboutus";
 import "./App.css";
 
 function App() {
@@ -33,9 +34,25 @@ function App() {
           ref={welcomePage}
         />
 
-        <Mysection
+        {/* <Mysection
           image={"src/assets/newbg1.jpg"}
           title={"About Us"}
+          ref={aboutUsPage}
+        /> */}
+        <Aboutus
+          backgroundImage={"src/assets/newbg1.jpg"}
+          title={"About Us"}
+          message={
+            "Jonah and Parker Edmundson have been training no-gi Jiu Jitsu since July 2020. Jonah earned his purple belt in 2023 under Sterling Redlack of RDC Jiu Jitsu, and Parker earned his blue belt in 2022 under Craig Shintani of Kingdom MMA. The Edmundsons bring a fun, modern approach to the grappling arts, and aim to provide an enjoyable training environment for both hobbyists and competitive athletes. Unique features of Giants Jiu Jitsu include the exclusive focus on no-gi grappling, as well as the weekly wrestling-only and leglock-only classes. Overall, Giants Jiu Jitsu provides members with a fun, competitive training environment and high level grappling instruction"
+          }
+          pic1={"src/assets/jonahImg.jpg"}
+          pic2={"src/assets/parkerImg.jpg"}
+          about1={
+            "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test "
+          }
+          about2={
+            "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test "
+          }
           ref={aboutUsPage}
         />
 
