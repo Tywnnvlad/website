@@ -45,7 +45,7 @@ const Schedule = forwardRef((props: sectionProp, ref) => {
 							</Text>
 						</Grid.Col>
 						<Grid.Col sm={12}>
-							<center>
+							<Center>
 								<div className='whiteOverlay'>
 									<Image
 										src={schedule}
@@ -53,7 +53,7 @@ const Schedule = forwardRef((props: sectionProp, ref) => {
 										radius={'md'}
 									/>
 								</div>
-							</center>
+							</Center>
 						</Grid.Col>
 					</Grid>
 				</Container>

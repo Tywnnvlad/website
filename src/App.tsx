@@ -35,31 +35,18 @@ function App() {
 					image={'src/assets/rotatinggiant.gif'}
 					ref={welcomePage}
 				/>
-
-				{/* <Mysection
-          image={"src/assets/newbg1.jpg"}
-          title={"About Us"}
-          ref={aboutUsPage}
-        /> */}
 				<Aboutus
 					backgroundImage={'src/assets/newbg1.jpg'}
 					title={'About Us'}
 					message={
-						'Jonah and Parker Edmundson have been training no-gi Jiu Jitsu since July 2020. Jonah earned his purple belt in 2023 under Sterling Redlack of RDC Jiu Jitsu, and Parker earned his blue belt in 2022 under Craig Shintani of Kingdom MMA. The Edmundsons bring a fun, modern approach to the grappling arts, and aim to provide an enjoyable training environment for both hobbyists and competitive athletes. Unique features of Giants Jiu Jitsu include the exclusive focus on no-gi grappling, as well as the weekly wrestling-only and leglock-only classes. Overall, Giants Jiu Jitsu provides members with a fun, competitive training environment and high level grappling instruction'
+						'Jonah and Parker Edmundson have been training no-gi Jiu Jitsu since July 2020. Jonah earned his purple belt in 2023 under Sterling Redlack of RDC Jiu Jitsu, and Parker earned his blue belt in 2022 under Craig Shintani of Kingdom MMA. The Edmundsons bring a fun, modern approach to the grappling arts, and aim to provide an enjoyable training environment for both hobbyists and competitive athletes. Unique features of Giants Jiu Jitsu include the exclusive focus on no-gi grappling, as well as the weekly wrestling-only and leglock-only classes. Overall, Giants Jiu Jitsu provides members with a fun, competitive training environment and high level grappling instruction.'
 					}
 					pic1={'src/assets/jonahImg.jpg'}
 					pic2={'src/assets/parkerImg.jpg'}
-					about1={'Jonah Edmunson'}
-					about2={'Parker Edmunson'}
+					about1={'Jonah Edmundson'}
+					about2={'Parker Edmundson'}
 					ref={aboutUsPage}
 				/>
-
-				{/* <Mysection
-					image={'src/assets/bg1.jpg'}
-					title={'Schedule'}
-					ref={schedulePage}
-				/> */}
-
 				<Schedule
 					backgroundImage={'src/assets/bg1.jpg'}
 					schedule={'/src/assets/current_schedule.png'}
@@ -78,15 +65,10 @@ function App() {
 				<Images
 					backgroundImage={'src/assets/bg3.jpg'}
 					img={'Test'}
-					title={'Images'}
+					title={'Gallery'}
 					message={'Snippets of our dojo'}
 					ref={imagePage}
 				/>
-				{/* <Mysection
-					image={'src/assets/bg4.jpg'}
-					title={'Contact Us'}
-					ref={contactUsPage}
-				/> */}
 				<ContactPage
 					backgroundImage={'src/assets/bg4.jpg'}
 					title={'Contact Us'}

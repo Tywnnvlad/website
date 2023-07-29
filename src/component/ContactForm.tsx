@@ -1,4 +1,11 @@
-import { TextInput, Checkbox, Button, Group, Box } from '@mantine/core';
+import {
+	TextInput,
+	Checkbox,
+	Button,
+	Group,
+	Box,
+	Textarea,
+} from '@mantine/core';
 import { useForm } from '@mantine/form';
 
 const ContactForm = () => {
@@ -11,7 +18,14 @@ const ContactForm = () => {
 		},
 
 		validate: {
+			name: (value) =>
+				value.length < 2
+					? 'Your name must have atleast 2 letters right?'
+					: null,
 			email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+			comment: (value) =>
+				value.length < 1 ? 'What do you want to tell us?' : null,
+			termsOfService: () => true,
 		},
 	});
 
@@ -27,7 +41,7 @@ const ContactForm = () => {
 				<TextInput
 					withAsterisk
 					label='Name'
-					placeholder='Name'
+					placeholder='Full name'
 					{...form.getInputProps('name')}
 					classNames={{ label: 'inputLabel', input: 'inputElement' }}
 				/>
@@ -38,11 +52,14 @@ const ContactForm = () => {
 					{...form.getInputProps('email')}
 					classNames={{ label: 'inputLabel', input: 'inputElement' }}
 				/>
-				<TextInput
+				<Textarea
 					withAsterisk
 					label='Comment'
 					placeholder='I like Giants JJ'
 					{...form.getInputProps('comment')}
+					autosize
+					minRows={2}
+					maxRows={5}
 					classNames={{ label: 'inputLabel', input: 'inputElement' }}
 				/>
 
