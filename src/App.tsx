@@ -6,6 +6,7 @@ import Location from './component/Location';
 import Images from './component/Images';
 import Aboutus from './component/Aboutus';
 import Schedule from './component/Schedule';
+import ContactPage from './component/ContactPage';
 import './App.css';
 
 function App() {
@@ -81,8 +82,13 @@ function App() {
 					message={'Snippets of our dojo'}
 					ref={imagePage}
 				/>
-				<Mysection
+				{/* <Mysection
 					image={'src/assets/bg4.jpg'}
+					title={'Contact Us'}
+					ref={contactUsPage}
+				/> */}
+				<ContactPage
+					backgroundImage={'src/assets/bg4.jpg'}
 					title={'Contact Us'}
 					ref={contactUsPage}
 				/>

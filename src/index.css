@@ -84,3 +84,20 @@
   background-color: rgba(255, 255, 255, 0.30); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
+
+.inputLabel{
+  color:  var(--mantine-color-giantsjj-1);
+}
+
+.inputElement{
+  background-color: var(--mantine-color-giantsjj-1);
+  border-color: var(--mantine-color-giantsjj-6);
+  color:  var(--mantine-color-giantsjj-9);
+}
+.inputElement::placeholder{
+  color:var(--mantine-color-giantsjj-9) ;
+}
+.iconElement{
+  background-color: var(--mantine-color-giantsjj-1);
+
+}

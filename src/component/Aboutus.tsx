@@ -60,7 +60,7 @@ const Aboutus = forwardRef((props: sectionProp, ref) => {
 						</Grid.Col>
 						<Grid.Col sm={12}>
 							<Text
-								size='0.9rem'
+								size='1rem'
 								color='giantsjj.1'>
 								{message}
 							</Text>
@@ -74,7 +74,9 @@ const Aboutus = forwardRef((props: sectionProp, ref) => {
 									<Image
 										src={pic1}
 										width={'20rem'}
+										height={'20rem'}
 										radius={'md'}
+										withPlaceholder
 									/>
 								</Center>
 								<Text
@@ -94,7 +96,9 @@ const Aboutus = forwardRef((props: sectionProp, ref) => {
 									<Image
 										src={pic2}
 										width={'20rem'}
+										height={'20rem'}
 										radius={'md'}
+										withPlaceholder
 									/>
 								</Center>
 								<Text
@@ -111,7 +115,7 @@ const Aboutus = forwardRef((props: sectionProp, ref) => {
 				className='img'
 				src={backgroundImage}
 			/>
-			<div className='overlay' />{' '}
+			<div className='overlay' />
 		</div>
 	);
 });
