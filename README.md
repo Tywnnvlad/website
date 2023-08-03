@@ -1,3 +1,6 @@
+# Important
+I have ported this to using NextJS which could be found here:
+https://github.com/Tywnnvlad/giantsjj-website
 # website
 This is a website I'm making for my friend. Made with ReactJS, MantineUI, Vite, and TypeScript
 
